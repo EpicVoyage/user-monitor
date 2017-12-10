@@ -45,22 +45,29 @@ a proper build in VC++ 2005 and up.
 
 # Command line arguments:
 
-usermonitor.exe /install /uninstall /test /server=localhost /port=3306 /etc
-
+> usermonitor.exe /install /uninstall /test /server=localhost /port=3306 /etc
+>
 > /install		- Installs the binary as a service in its current location
+>
 > /uninstall	- Removes itself from being a service
 >
 > /server=		- Set MySQL server					[Default: localhost]
+>
 > /port=			- Set server port to use		[Default: 3306]
+>
 > /db=				- Set the MySQL database		[Default: usermap]
+>
 > /user=			- Set login username				[Default: monitor]
+>
 > /password=	- Set remote password for reporting
+>
 > /ssl=				- 0 = off, 1 = on						[Default: 0]
 >
 > /logserver=	- RFC3164 syslog server			[Default: localhost]
+>
 > /logport=		- UDP port for syslog messages	[Default: 514]
-> /log=				- Log type. 0 = none, 1 = UserMonitor.txt, 2 = syslog,
-> 				  							3 = both				[Default: 3]
+>
+> /log=				- Log type. 0 = none, 1 = UserMonitor.txt, 2 = syslog, 3 = both [Default: 3]
 >
 > /test			- Perform one user check and exit
 
